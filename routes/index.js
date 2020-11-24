@@ -8,7 +8,6 @@ var log4js = require('log4js');
 var logger = log4js.getLogger();
 var async = require("async");
 logger.level = 'debug'; // debug, info, warn, error
-
 // var mobile = require('is-mobile');
 
 const Landing = require('../model/landing.js');

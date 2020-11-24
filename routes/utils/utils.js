@@ -31,6 +31,7 @@ class Utils {
             callback(getErroceCodeByERR(err), results);
         });
     }
+    
     getParametriByTipo(tipo, callback) {
         var query = "SELECT * FROM parametri WHERE tipo = '{tipo}';".replace("{tipo}", tipo);
         db.executeQuery(query, function (err, results) {
