@@ -39,16 +39,19 @@ body {
     background-color: #d0f0c0;
     border: none;
 }
-.informiamoci-div-image {
+.modal-div-image {
     text-align: center;
     max-width: 100%;
     max-height: 100%;
 }
-.informiamoci-div-image img {
+.modal-div-image img {
     max-width: 100%;
     max-height: 100%;
 }
 
+.modal-dialog {
+    border-radius: 10px;
+}
 
 @media screen and (max-width: 767px) {
     .last_block, .main_block {

@@ -1,13 +1,14 @@
 (function($) {
   "use strict";
   
+
+  $('#informiamoci').on('click', function () { $("#modal-informiamoci").modal() });
+  $('#calendario').on('click', function () { $("#modal-calendario").modal() });
+  $('#routine').on('click', function () { $("#modal-routine").modal() });
+  $('#percorso').on('click', function () { $("#modal-percorso").modal() });
+  $('#alleniamoci').on('click', function () { $("#modal-alleniamoci").modal() });
   
-  $('#informiamoci').on('click', function () {
-    console.log("AAAAAAA")
-    $("#modal-informiamoci").modal()
-  })
-
-
+  
   $(".owl-carousel").owlCarousel({
     loop: true,
     margin: 30,
