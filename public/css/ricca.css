@@ -1,5 +1,5 @@
 body {
-    background-color: #c2e6ec;
+    background-color: #e6f5f7;
 }
 
 .main_block {
@@ -9,6 +9,7 @@ body {
     border-radius: 55px;
     padding: 10px;
     margin: 0 auto;
+    background-color: #3eb489;
 }
 
 .last_block {  width: 100%; }
@@ -21,8 +22,15 @@ body {
 .cella-5 { background-color: orange; }
 
 .container {
-    background-color: #c1c1c1;
+    background-color: #eee;
     height: 3000px;
+}
+
+
+.block-title p {
+    line-height: 250px;
+    color: black;
+    font-size: medium;
 }
 
 @media screen and (max-width: 767px) {
