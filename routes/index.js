@@ -15,7 +15,7 @@ const Landing = require('../model/landing.js');
 const Utils = require('./utils/utils.js');
 const utility = new Utils();
 const route = 'homepage';
-const main_url = 'www.rifuging.com/';
+const main_url = 'www.letsgetphysicapp.com/';
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -37,13 +37,31 @@ router.get('/', function(req, res, next) {
   });
 });
 
+function roadToIndex(req, res) {
+  res.render(utility.getViewByURL('default', 'index'), {
+    title: 'Home',
+    page_url: main_url + 'index',
+    page_description: 'Landing di benvenuto',
+    page_title: 'Lets get physic APP | Benvenuto',
+    analytics: process.env.GOOGLE_ANALYTICS
+  });
+};
+
 router.get('/landing', function (req, res, next) {
+  // Prendere da DB
+  prima_riga = ['Informiamoci', 'Calendario Eventi'];
+  seconda_riga = ['Crea la tua routine', 'Percorso salute'];
+  terza_riga = ['Alleniamoci Online'];
+  block_titles = [prima_riga, seconda_riga, terza_riga];
+
   res.setHeader('Cache-Control', 'max-age=31536000');
   res.render(utility.getViewByURL('default', 'landing'), {
     title: 'Home', 
     page_url: main_url + 'landing',
     page_description: 'Landing di benvenuto',
-    page_title: 'Rifuging | Benvenuto',
+    page_title: "Let's get physic APP | Benvenuto",
+    block_number: block_titles.lenght,
+    block_titles: block_titles,
     analytics: process.env.GOOGLE_ANALYTICS });
 });
 
@@ -53,7 +71,7 @@ router.get('/work_in_progress', function (req, res, next) {
     title: ' Home', 
     page_url: main_url + 'work_in_progress',
     page_description: 'Work in progress',
-    page_title: 'Rifuging | Work in progress',
+    page_title: "Let's get physic APP | Work in progress",
     analytics: process.env.GOOGLE_ANALYTICS });
 });
 

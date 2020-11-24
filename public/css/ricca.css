@@ -1,0 +1,32 @@
+body {
+    background-color: #c2e6ec;
+}
+
+.main_block {
+    min-height: 270px;
+    min-width: 270px;
+    text-align: center;
+    border-radius: 55px;
+    padding: 10px;
+    /* display: table; */
+    margin: 0 auto;
+}
+
+.last_block {
+    width: 100%;
+}
+
+.main-cella {
+    padding: 10px;
+}
+
+.cella-1 { background-color: blue; }
+.cella-2 { background-color: aqua; }
+.cella-3 { background-color: yellowgreen; }
+.cella-4 { background-color: yellow; }
+.cella-5 { background-color: orange; }
+
+.container {
+    background-color: #c1c1c1;
+    height: 3000px;
+}
