@@ -1,0 +1,8 @@
+.row.admin-page-header.border-bottom.mb-3
+    .col-sm-10
+        h1 #{title}
+    .col-sm-2
+        if flag == 'new'
+            a.btn.btn-outline-info.btn-lg.float-right(href='/admin/'+section+'/new' role="button") Nuovo
+        else if flag == 'modifica'
+            a.btn.btn-outline-info.btn-lg.float-right(href='/admin/'+section+'/'+id+'/modifica' role="button") Modifica

@@ -1,0 +1,33 @@
+extends ../main/layout
+
+block add-css
+    link(href='/css/style-landing.min.css', rel='stylesheet')
+
+block add-js
+
+block footer
+    include ../main/footer.jade
+
+block nav
+
+block content
+    main
+        .page-loader
+            .loader Loading...
+        
+        section#home.home-section.home-parallax.home-fade.home-full-height.bg-dark.bg-dark-30(data-background='/img/assets/404.jpeg')
+            .titan-caption
+                .caption-content
+                    .font-alt.mb-30.titan-title-size-4 Error 404
+                    |             
+                    .font-alt
+                    | Questa pagina non sembra esistere.. almeno qui
+                    br
+                    | È tutto quello che so.
+                    |             
+                    .font-alt.mt-30
+                        a.btn.btn-border-w.btn-round(href='/') Torna alla Home Page
+
+
+        
+    

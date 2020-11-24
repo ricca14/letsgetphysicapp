@@ -1,0 +1,100 @@
+extends ../main/layout
+
+block add-css 
+    link(href='/css/style-landing.min.css', rel='stylesheet')   
+
+block add-js
+
+block footer
+    include ../main/footer.jade
+
+block nav
+    include ../main/navbar.jade
+
+block content
+
+    .page-loader
+        .loader Caricamento...
+
+    section#home.home-section.home-parallax.home-fade.home-full-height.bg-dark-30(data-background='img/assets/image-landing.jpeg')
+        .titan-caption
+            .caption-content
+                .font-alt.mb-30.titan-title-size-1 About Us
+                .font-alt.mb-40.titan-title-size-4 Libro del giorno
+                a.section-scroll.btn.btn-border-w.btn-round(href='#about') Learn More
+
+    .main
+        section#about.section-about-us.middle-section
+            .container
+                .row
+                    .col-sm
+                        h3 Chi siamo?
+                        p.about-us-p
+                            | Libro del giorno è una voce che esprime un punto di vista. In realtà ben più di uno.
+                        p.about-us-p 
+                            | Ognuno di noi, anche il più razionale e metodico, sa bene che la scelta di un libro non è quasi mai dettata solo da ragioni logiche: a volte ci ispira la copertina, i colori, l’autore, un sacco di variabili giocano nella scelta irrazionale del nostro compagno di viaggio.
+                            | L’idea è di consigliarvi un libro ogni giorno, vi proporremo la trama, ma anche una piccola spiegazione che possa essere un fil Rouge del perché sia suggerito proprio per oggi e non per domani o per l’anno prossimo.
+                            | Inevitabilmente la scelta sarà dettata anche da nostri gusti personali, ripescheremo dal passato, ma cercheremo anche di proporre libri ad hoc e in linea con le nuove uscite.
+                            | L’ardua impresa sarà quella di consigliarvi 365 libri e speriamo che l’idea possa piacervi.
+                .row.mt-20
+                    .col-sm
+                        h3 Chi si cela dietro a libro del giorno?
+                        p.about-us-p
+                            | È stato un pò difficile trovare il modo di rispondere a questa domanda, quindi ho optato per affidare questo impegnativo compito al nostro logo.
+                            | Cosa meglio di un’immagine a volte può dire ciò che le parole non riescono ad esprimere?
+                        p.about-us-p 
+                            | Chi sta quindi dietro a libro del giorno? 
+                        p.about-us-p 
+                            | Due ragazzi; Chiara, studentessa di Psicologia, e Gianluca, Programmatore informatico. Come le virgolette del nostro logo, siamo complementari nella vita e nella realizzazione di questo progetto. Le virgolette proteggono il nostro progetto, la nostra idea, e speriamo che siano fedeli compagni di viaggio anche per chi deciderà di farci compagnia. Ognuno di noi porta qualcosa di diverso e innovativo all’interno del nostro sito e l’idea è che questo possa arricchire anche chi ci legge.
+                            | Speriamo di poter dare un valore aggiunto, una prospettiva diversa del messaggio racchiuso nel libro proposto, prendendo spunto da consigli, letture, opinioni di amici e nuove uscite. Spesso più persone leggono lo stesso libro e si ritrovano ad avere sensazioni, pensieri, emozioni contrastanti tra loro ed è proprio su questa molteplicità di voci che vogliamo soffermarci. Anche per noi è una sfida personale, umilmente ammettiamo di non aver letto tutti i libri di cui parleremo, ma ognuno di noi ha quell’amico fidato che gli consiglia il libro giusto per il momento giusto, qualcuno che sa in che modo rendere piena la vita e dare valore ad una giornata. Così senza fare troppo rumore speriamo di entrare nelle vostre borse da viaggio ed essere compagni e consiglieri durante questa avventura.
+                            | Invece di essere l’apostrofo rosa di tanti vogliamo essere le virgolette delle citazioni che vi accompagneranno lungo questo percorso insieme. 
+                .row.mt-20
+                    .col-sm
+                        h3 Dove potete trovarci?
+
+                        .about-us-contact
+                            i.fab.fa-facebook-f  
+                            a.facebook(href='https://www.facebook.com/librodelgiornoofficial/', target='_blank') Facebook
+                        .about-us-contact 
+                            i.fab.fa-instagram 
+                            a.instagram(href='https://www.instagram.com/librodelgiorno_official/', target='_blank') Instagram
+                        .about-us-contact 
+                            i.fas.fa-envelope 
+                            a.contact-email(href='mailto:info.librodelgiorno@gmail.com') info.librodelgiorno@gmail.com
+                           
+
+        section#privacy-policy.section-about-us.middle-section.padding-25
+            .container
+                .row
+                    .col-sm
+                        h3 Privacy Policy
+                        .medium-text.mb-10 
+                            p.about-us-p librodelgiorno.com raccoglie dati solo sull'utilizzo del sito, come pagine visitate, libri più cliccati e altro, in modo da tale da migliorare costantemente il nostro servizio.
+                        a.iubenda-black.iubenda-embed(href='https://www.iubenda.com/privacy-policy/31767364', title='Privacy Policy ') Privacy Policy
+                        script(type='text/javascript').
+                            (function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);
+                        a.iubenda-black.iubenda-embed(href='https://www.iubenda.com/privacy-policy/31767364/cookie-policy', title='Cookie Policy ') Cookie Policy
+                        script(type='text/javascript').
+                            (function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);
+  
+        section#amazon-disclaimer.section-about-us.middle-section.padding-25
+            .container
+                .row.mt-10
+                    .col-sm
+                        h3 Affiliazione
+                        p.about-us-p 
+                            | As an Amazon Associate I earn from qualifying purchases.
+                        p.about-us-p
+                            | librodelgiorno.com è affiliato con le più grandi catene di vendita libri.
+                            | Mondadori, Feltrinelli, IBS e Libraccio.it ci hanno dato fiducia e questo ci riempie di orgoglio  
+                        p.about-us-p
+                            | Il nostro obbiettivo, oltre che consigliarvi titoli interessanti e accattivanti, è darvi la piú ampia scelta possibile fra le offerte disponibili sul mercato online cosi che possiate confrontarle e scegliere la migliore.
+                            | Tutto questo, in ogni caso, non crea alcun sovrapprezzo sui libri ma supporta librodelgiorno.com e ne permette il sostentamento.
+                        p.about-us-p.mb-20 
+                            | Stiamo lavorando per potervi offrire anche diversi buoni sconto.
+                        p.about-us-p.mb-20 
+                            | Ci scusiamo in anticipo se alcuni titoli selezionati non saranno disponibili su alcuni network.
+        
+        .scroll-up
+            a(href='#totop')
+                i.fa.fa-angle-double-up

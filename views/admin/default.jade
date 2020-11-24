@@ -1,0 +1,21 @@
+extends main/layout
+
+block add-css
+    link(rel='stylesheet', href='/css/admin/admin.css')
+
+block add-js
+    script(type='text/javascript' src='/js/admin/admin.js')
+
+block nav
+    include main/navbar.jade
+
+block content
+    .main
+        div.text-center.wip
+            h1 
+                | I'm Sorry... pagina 
+                span(style='color: #ff0000') #{section} 
+                | ancora in fase di sviluppo
+            img(src='/img/admin/wip.png')
+
+        

@@ -1,0 +1,28 @@
+extends main/layout
+
+block add-css
+    link(rel='stylesheet', href='/css/admin/admin.css')
+
+block add-js
+    script(type='text/javascript' src='/js/admin/admin-login.js')
+
+block content
+    #wrapper
+        form#login-form
+            .box-login  
+                .row
+                    .col.form-group
+                        label(for='username') USERNAME
+                        input#username.form-control.required(type='text', name='username')
+                        div.invalid-feedback Username errato.. CHI CAZZO SEI???
+                .row  
+                    .col.form-group
+                        label(for='password') PASSWORD
+                        input#password.form-control(type='password', name='password', min-lenght='10')
+                        div.invalid-feedback Username errato.. TI DENUNCIOOOOO???  
+                .row
+                    .col
+                        //- input#submit.btn.btn-primary.disabled(type='submit', value='Invia', class="g-recaptcha" data-sitekey="6LcsxY4UAAAAAM_bbmILI1QPTTzT3pROaRpOAd-t" data-callback='onSubmitLogin')
+                        input#submit.btn.btn-primary(type='submit', value='Invia', data-callback='onSubmitLogin')
+
+

@@ -1,0 +1,18 @@
+for libro in suggerimenti
+    .col-sm-6.col-md-3.col-lg-3.post-div
+        .post
+            .post-thumbnail
+                a.set-flex(href='libri/#{libro.link}')
+                    img.image-thumbnail(src='#{libro.image}', alt='#{libro.titolo}')
+            .post-header.font-alt
+                h2.post-title
+                    a(href='libri/#{libro.link}') #{libro.titolo}
+                .post-meta
+                    | Di 
+                    a(href='#') #{libro.autore_nome}
+                    |  #{libro.data}
+            .post-entry
+                p
+                    | #{libro.trama_short} [...]
+            .post-more
+                a.more-link(href='libri/#{libro.link}') Leggi tutta la trama...

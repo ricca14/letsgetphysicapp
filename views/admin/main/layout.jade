@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    title= 'ADMIN'
+
+    include default-css.jade
+    block add-css
+
+  body
+
+    .loader-container.d-none
+      .loader
+
+    div
+      block nav
+      block content
+    
+  include default-js.jade
+  block add-js

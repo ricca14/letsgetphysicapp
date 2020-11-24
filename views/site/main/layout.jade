@@ -1,0 +1,40 @@
+doctype html
+html(lang="it" xml:lang="it")
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    
+    meta(property='og:url', content='#{page_url}')
+    meta(property='og:type', content='website')
+    meta(property='og:title', content='#{page_title}')
+    meta(property='og:description', content='#{page_description}')
+    meta(property='og:image', content='#{page_image}')
+
+    meta(name="verification" content="9190064962983d32743b3b1fef5af6eb")
+    
+    meta(charset='UTF-8')
+    meta(name='description', content='refuging')
+    meta(name='keywords', content='refuging keywords')
+    meta(name='author', content='Ricaldone Gianluca')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+    link(rel='icon', href='/img/favicon.ico')
+
+    title= 'Rifuging- ' + title
+
+    include default-css.jade
+    block add-css
+
+  body(data-spy="scroll" data-target=".onpage-navigation" data-offset="60")
+
+    block loader 
+    
+    block header
+
+    block content
+  
+  block footer
+    
+  include default-js.jade
+  block add-js
+  

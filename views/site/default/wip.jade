@@ -1,0 +1,30 @@
+extends ../main/layout
+
+block add-css
+    link(href='/css/style-landing.min.css', rel='stylesheet')
+
+block add-js
+
+block footer
+    include ../main/footer.jade
+
+block nav
+
+block content
+    .page-loader
+        .loader Caricamento...
+
+    section#home.home-section.home-parallax.home-fade.home-full-height.bg-dark-30(data-background='img/assets/image-wip.jpeg')
+        .titan-caption
+            .caption-content
+                .font-alt.mb-30.titan-title-size-2 Sito in aggiornamento..
+                .font-alt.mb-40.titan-title-size-4 Libro del giorno
+                .font-alt.mb-30.titan-title-size-1 Torneremo nel più breve tempo possibile
+                        
+        .scroll-up
+            a(href='#totop')
+                i.fa.fa-angle-double-up
+
+
+        
+    
