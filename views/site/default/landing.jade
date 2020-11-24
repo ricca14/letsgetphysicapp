@@ -18,13 +18,13 @@ block loader
 
 
 block content
-    .container
-        for riga, indice_riga in block_titles
 
-            if indice_riga < 2
+    .container
+        for riga in block_titles
+            if Object.keys(riga).length > 1
                 .row
                     .col-sm-3
-                    for titolo, indice_colonna in riga
+                    for data_blocco in riga
                         .col-sm-3
                             include component/home_block.jade
                     .col-sm-3
@@ -32,19 +32,10 @@ block content
             else
                 .row
                     .col-sm-3
-                    for titolo, indice_colonna in riga
+                    for data_blocco in riga
                         .col-sm-6
                             include component/home_block.jade
                     .col-sm-3
                 .spacer
 
-            //-     .row
-    //-         form#stato-sito-form
-    //-             for parametro in parametri_sito
-    //-                 .col-sm 
-    //-                     if (parametro.valore == '1')
-    //-                         h5 #{parametro.chiave}
-    //-                         input(type='checkbox', data-toggle='toggle', checked) 
-    //-                     else
-    //-                         h5 #{parametro.chiave}
-    //-                         input(type='checkbox', data-toggle='toggle')
+    include component/modal_informiamoci.jade

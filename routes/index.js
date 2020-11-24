@@ -49,9 +49,16 @@ function roadToIndex(req, res) {
 
 router.get('/landing', function (req, res, next) {
   // Prendere da DB
-  prima_riga = ['Informiamoci', 'Calendario Eventi'];
-  seconda_riga = ['Crea la tua routine', 'Percorso salute'];
-  terza_riga = ['Alleniamoci Online'];
+  prima_riga = [
+    {'titolo': 'Informiamoci', 'modal':'informiamoci'}, 
+    { 'titolo': 'Calendario Eventi', 'modal': 'calendario'}
+  ];
+
+  seconda_riga = [
+    { 'titolo': 'Crea la tua routine', 'modal': 'routine' },
+    { 'titolo': 'Percorso salute', 'modal': 'percorso' }
+  ]
+  terza_riga = [{ 'titolo': 'Alleniamoci Online', 'modal': 'alleniamoci'}];
   block_titles = [prima_riga, seconda_riga, terza_riga];
 
   res.setHeader('Cache-Control', 'max-age=31536000');

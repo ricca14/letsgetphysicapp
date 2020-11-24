@@ -1,5 +1,12 @@
 (function($) {
   "use strict";
+  
+  
+  $('#informiamoci').on('click', function () {
+    console.log("AAAAAAA")
+    $("#modal-informiamoci").modal()
+  })
+
 
   $(".owl-carousel").owlCarousel({
     loop: true,
