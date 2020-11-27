@@ -65,11 +65,28 @@ body {
     margin: 0 5px 5px 5px;
 }
 .alleniamoci-image {
-    max-height: 250px;
+    max-height: 200px;
     margin: 0 5px 5px 5px;
 }
 
-
+.block_percorso {
+    height: 100%;
+    width: 100%;
+}
+.percorso-image{
+   width: 100%;
+}
+.percorsi { 
+    overflow:hidden;
+}
+.percorso-icon { 
+    max-width: 16px;
+    float: left;
+}
+.percorso-elenco {
+    float: left;
+    margin-left: 5px;
+}
 @media screen and (max-width: 767px) {
     .last_block, .main_block {
         width: 80%;

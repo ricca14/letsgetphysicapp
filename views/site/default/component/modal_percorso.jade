@@ -1,0 +1,35 @@
+#modal-percorso.modal.fade(tabindex='-1' role='dialog' aria-labelledby='percorso-label' aria-hidden='true')
+  .modal-dialog.main-modal(role='document')
+    .modal-content
+      .modal-header
+        h2#modal_alleniamoci_label.modal-title PERCORSI SALUTE
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+          span(aria-hidden='true') ×
+      .modal-body
+        .row.block_percorso
+            .col-sm-9
+                img.percorso-image(src='/images/percorsi.png')
+            .col-sm-3
+                .spacer
+                .row
+                    .col
+                        img.percorso-icon(src='/images/yellow.png')
+                        p.percorso-elenco Parco 1 via del boh
+                .spacer
+                .row
+                    .col
+                        img.percorso-icon(src='/images/red.webp')
+                        p.percorso-elenco Percorso attrezzato
+                .spacer
+                .row
+                    .col
+                        img.percorso-icon(src='/images/red.webp')
+                        p.percorso-elenco Percorso attrezzatissimo
+                .spacer
+                .row
+                    .col
+                        img.percorso-icon(src='/images/yellow.png')
+                        p.percorso-elenco Parco 2 via del boh boh boh
+                .spacer
+                
+      .modal-footer
