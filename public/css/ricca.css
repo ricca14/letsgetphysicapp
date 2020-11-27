@@ -53,6 +53,23 @@ body {
     border-radius: 10px;
 }
 
+.spacer {
+    margin-top: 15px;
+}
+.block_alleniamoci {
+    margin-left: 0px;
+}
+.alleniamoci-icon {
+    max-height: 60px;
+    max-width: 60px;
+    margin: 0 5px 5px 5px;
+}
+.alleniamoci-image {
+    max-height: 250px;
+    margin: 0 5px 5px 5px;
+}
+
+
 @media screen and (max-width: 767px) {
     .last_block, .main_block {
         width: 80%;
