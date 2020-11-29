@@ -79,8 +79,13 @@ h1,h2,h3,h4,h5,h6 {
     margin: 0 5px 5px 5px;
 }
 .alleniamoci-image {
-    max-height: 200px;
+    max-height: 100%;
+    max-width: 100%;
     margin: 0 5px 5px 5px;
+}
+.container-image {
+    width: auto;
+    height: auto;
 }
 
 .block_percorso {
