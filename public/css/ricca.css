@@ -47,6 +47,26 @@ h1,h2,h3,h4,h5,h6 {
 
 .last_block { width: 100%; }
 
+.informiamoci-yt-logo {
+    max-height: 100px;
+    float: right;
+}
+.informiamoci-image {
+    max-height: 400px;
+}
+.container-test p {
+    color: #f4f0d9;
+}
+.container-align-center {
+    text-align: center;
+}
+.container-test {
+    line-height: 1.5em;
+    height: 3em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
 
 .main-modal,.modal-dialog,.modal-content,.modal-header {
     min-width: 75%;
@@ -118,5 +138,8 @@ h1,h2,h3,h4,h5,h6 {
         max-height: 100px;
         max-width: 100px;
         margin: 0 5px 5px 5px;
+    }
+    .informiamoci-yt-logo {
+        float: none;
     }
 }
