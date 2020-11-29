@@ -15,7 +15,12 @@ body {
     background-color: #e6f5f7;
     font-family: Aloja;
 }
-
+h1,h2,h3,h4,h5,h6 {
+    color:#f4f0d9
+}
+.modal-footer {
+    border: none;
+}
 .container {
     background-color: #eee;
     background-repeat: no-repeat;
@@ -45,7 +50,7 @@ body {
 
 .main-modal,.modal-dialog,.modal-content,.modal-header {
     min-width: 70%;
-    background-color: #d0f0c0;
+    background-color: #a0ab90;
     border: none;
 }
 .modal-div-image {
