@@ -127,6 +127,19 @@ h1,h2,h3,h4,h5,h6 {
     margin-left: 5px;
     font-size: 16px;
 }
+
+.gym-icon { 
+    max-width: 90px;
+    float: left;
+    border-radius: 50%;
+}
+.gym-elenco {
+    float: left;
+    margin-left: 15px;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
 @media screen and (max-width: 767px) {
     .last_block, .main_block {
         width: 80%;
