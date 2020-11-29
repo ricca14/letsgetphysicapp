@@ -1,7 +1,21 @@
+
+@font-face {
+    font-family: Aloja;
+    src: url("/font/aloja-light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Aloja;
+    font-weight: bold;
+    src: url("/font/aloja-light.otf") format("opentype");
+}
+
 html, body{height:100%;} 
 body {
     background-color: #e6f5f7;
+    font-family: Aloja;
 }
+
 .container {
     background-color: #eee;
     background-repeat: no-repeat;
@@ -15,24 +29,19 @@ body {
     border-radius: 55px;
     padding: 10px;
     margin: 0 auto;
-    background-color: #3eb489;
+    background-color: #638c80;
 }
 
 .main-cella { padding: 10px; }
 
 .block-title p {
     line-height: 250px;
-    color: black;
-    font-size: medium;
+    color: #f4f0d9;
+    font-size: larger;
 }
 
 .last_block { width: 100%; }
 
-.cella-1 { background-color: blue; }
-.cella-2 { background-color: aqua; }
-.cella-3 { background-color: yellowgreen; }
-.cella-4 { background-color: yellow; }
-.cella-5 { background-color: orange; }
 
 .main-modal,.modal-dialog,.modal-content,.modal-header {
     min-width: 70%;
