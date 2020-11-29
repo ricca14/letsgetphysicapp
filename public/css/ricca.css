@@ -74,9 +74,9 @@ h1,h2,h3,h4,h5,h6 {
     margin-left: 0px;
 }
 .alleniamoci-icon {
-    max-height: 120px;
-    max-width: 120px;
-    margin: 0 5px 5px 5px;
+    max-height: 175px;
+    max-width: 175px;
+    margin: 0 15px 5px 5px;
 }
 .alleniamoci-image {
     max-height: 100%;
@@ -105,6 +105,7 @@ h1,h2,h3,h4,h5,h6 {
 .percorso-elenco {
     float: left;
     margin-left: 5px;
+    font-size: 16px;
 }
 @media screen and (max-width: 767px) {
     .last_block, .main_block {
@@ -112,5 +113,10 @@ h1,h2,h3,h4,h5,h6 {
     }
     .main_block {
         display: table;
+    }
+    .alleniamoci-icon {
+        max-height: 100px;
+        max-width: 100px;
+        margin: 0 5px 5px 5px;
     }
 }
