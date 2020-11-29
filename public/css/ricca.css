@@ -49,7 +49,7 @@ h1,h2,h3,h4,h5,h6 {
 
 
 .main-modal,.modal-dialog,.modal-content,.modal-header {
-    min-width: 70%;
+    min-width: 75%;
     background-color: #a0ab90;
     border: none;
 }
