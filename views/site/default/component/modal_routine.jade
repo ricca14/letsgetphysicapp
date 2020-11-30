@@ -13,28 +13,55 @@
                 .row
                     h5 Crea scheda
                 .spacer
+                .row  
+                  .col-sm-12
+                    .row
+                      form
+                        .form-group
+                          label Nome
+                          input.form-control(type='text' placeholder='Nome')
+                        .form-group
+                          label Data di nascita
+                          input.form-control(type='date' aria-describedby='emailHelp' placeholder='Data di nascita')
+                        .form-group
+                          label Altezza
+                          input.form-control(type='number' aria-describedby='emailHelp' placeholder='Altezza (cm)' unit='cm')
+                        .form-group
+                          label Peso
+                          input.form-control(type='number' aria-describedby='emailHelp' placeholder='Peso (KG)')
+                        .form-group
+                          label Quante volte vuoi allenarti?
+                          input.form-control(type='number' aria-describedby='emailHelp' placeholder='Allenamenti')
+                      
+                    .spacer
+                    .row(style='text-align:center')
+                      button.btn.btn-primary(type='Submit') Scopri la tua scheda 
+
+                      //- 
+                  //- nome
+                  //- cognome, eta peso altezza
+                .spacer
             .col-sm-6
                 .spacer
                 .row
                     h5 Consulta un esperto
-                  
                 .spacer
                 .row
                   .col-sm-12
                     .row
-                        .col
+                        .col-sm-12
                           a(href= "mailto:abc@example.com")
                             img.gym-icon(src='/images/gym_1.jpg')
                             p.gym-elenco COMPANY NAME
                     .spacer
                     .row
-                        .col
+                        .col-sm-12
                           a(href= "mailto:abc@example.com")
                             img.gym-icon(src='/images/gym_4.jpg')
                             p.gym-elenco YOU FITNESS CLUB
                     .spacer
                     .row
-                        .col
+                        .col-sm-12
                           a(href= "mailto:abc@example.com")
                             img.gym-icon(src='/images/gym_5.jpg')
                             p.gym-elenco NO NAME GYM
